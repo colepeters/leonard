@@ -1,4 +1,14 @@
 {
   "name": "Leonard",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "description": "A theme for my blog (https://blog.colepeters.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colepeters/leonard"
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-cssnext": "1.0.0"
+  }
 }
