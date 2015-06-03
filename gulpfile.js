@@ -17,6 +17,7 @@ gulp.task('sync', function(){
     proxy: "localhost:2368"
   });
   gulp.watch('./src/css/*.css', ['css']);
+  gulp.watch('./*.hbs').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['css', 'sync']);
