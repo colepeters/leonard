@@ -8,6 +8,7 @@
   },
   "license": "CC-BY-NC-SA-4.0",
   "devDependencies": {
+    "browser-sync": "2.7.6",
     "gulp": "3.9.0",
     "gulp-cssnext": "1.0.0"
   }
