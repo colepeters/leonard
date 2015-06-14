@@ -26,6 +26,11 @@
   }
 }
 
+.c-post img {
+  max-width: 100%;
+  height: auto;
+}
+
 .c-post-excerpt {
   position: relative;
   border-bottom: 1px solid var(--grey-300);
