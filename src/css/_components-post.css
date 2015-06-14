@@ -1,3 +1,27 @@
+.c-post h2,
+.c-post h3,
+.c-post h4,
+.c-post h5,
+.c-post h6 {
+  margin: 0;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  text-align: center;
+  color: var(--blue-500);
+}
+
+@media (--screen-md) {
+  .c-post h2,
+  .c-post h3,
+  .c-post h4,
+  .c-post h5,
+  .c-post h6 {
+    padding-top: 10vh;
+    padding-bottom: 0;
+    text-align: left;
+  }
+}
+
 .c-post-excerpt {
   position: relative;
   border-bottom: 1px solid var(--grey-300);
@@ -32,10 +56,13 @@
 }
 
 .c-title {
-
+  font-size: 333%;
+  font-weight: 200;
+  color: var(--blue-600);
 }
 
 .c-title--excerpt a {
   font-size: 150%;
   font-weight: 200;
+  color: var(--blue-500);
 }

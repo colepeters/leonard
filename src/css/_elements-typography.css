@@ -20,6 +20,35 @@ body {
   }
 }
 
+hr {
+  border: none;
+  border-top: 1px solid var(--grey-300);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+blockquote {
+  border-left: 4px solid var(--grey-300);
+  margin: 0;
+}
+
+blockquote p {
+  margin-left: 0.5rem;
+  font-family: "Source Sans Pro", Roboto, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 120%;
+  line-height: 1.4;
+  color: var(--blue-600);
+}
+
+@media (--screen-md) {
+  blockquote p {
+    margin-left: 2rem;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+  }
+}
+
 /* ========================================================
  * HEADINGS
  * ======================================================*/
@@ -74,7 +103,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--color-cyan);
+  color: var(--blue-700);
   background-image: linear-gradient(transparent 50%, var(--blue-500) 50%);
 }
 

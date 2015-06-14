@@ -7,7 +7,11 @@
 .u-py2 { padding-top: 2rem; padding-bottom: 2rem; }
 .u-py3 { padding-top: 3rem; padding-bottom: 3rem; }
 .u-py4 { padding-top: 4rem; padding-bottom: 4rem; }
-.u-py6 { padding-top: 6rem; padding-bottom: 6rem; }
+
+.u-py-dynamic {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
 
 .u-mt1 { margin-top: 1rem; }
 .u-mt2 { margin-top: 2rem; }
