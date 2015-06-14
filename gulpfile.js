@@ -7,7 +7,7 @@ var rename = require('gulp-rename');
 gulp.task('css', function(){
   gulp.src('src/css/app.css')
     .pipe(cssnext({
-      compress: true
+      compress: false
     }))
     .pipe(rename({
       suffix: '.min'

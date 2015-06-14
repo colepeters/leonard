@@ -1,2 +1,14 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import "_settings-media.css";
+@import "_settings-colour.css";
+@import "_elements-typography.css";
+@import "_objects-grid.css";
+@import "_utilities.css";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #fafbfc;
+}

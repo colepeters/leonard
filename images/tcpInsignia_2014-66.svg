@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="66px" height="66px" viewBox="0 0 66 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>tcpInsignia_2014-66</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="33.1811816" cy="33.1811816" r="31.1811816"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="tcpInsignia_2014-66" sketch:type="MSArtboardGroup">
+            <mask id="mask-2" sketch:name="Oval 1" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval-1" fill="#D8D8D8" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+            <rect id="Background" fill="#E65050" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="2" y="2" width="62.3623633" height="62.3623633"></rect>
+            <g id="Insignia" sketch:type="MSLayerGroup" mask="url(#mask-2)">
+                <g transform="translate(11.378715, 14.301951)">
+                    <g id="Bottom-L" transform="translate(10.353127, 25.578313) scale(1, -1) translate(-10.353127, -25.578313) translate(0.000000, 13.398164)">
+                        <path d="M0,13.398164 L0,15.5905908 L20.7068655,2.19242683 L20.7068655,0 L0,13.398164 Z" id="Rectangle-1" fill="#3F3F3F" sketch:type="MSShapeGroup"></path>
+                        <path d="M0,17.7830177 L0,19.9754445 L20.7068655,6.5772805 L20.7068655,4.38485367 L0,17.7830177 Z" id="Rectangle-1-copy" fill="#3F3F3F" sketch:type="MSShapeGroup"></path>
+                        <path d="M0,22.1678713 L0,24.3602982 L20.7068655,10.9621342 L20.7068655,8.76970734 L0,22.1678713 Z" id="Rectangle-1-copy-2" fill="#3F3F3F" sketch:type="MSShapeGroup"></path>
+                    </g>
+                    <g id="Top-L">
+                        <path d="M0,13.398164 L0,15.5905908 L20.7068655,2.19242683 L20.7068655,0 L0,13.398164 Z" id="Rectangle-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                        <path d="M0,17.7830177 L0,19.9754445 L20.7068655,6.5772805 L20.7068655,4.38485367 L0,17.7830177 Z" id="Rectangle-1-copy" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                        <path d="M0,22.1678713 L0,24.3602982 L20.7068655,10.9621342 L20.7068655,8.76970734 L0,22.1678713 Z" id="Rectangle-1-copy-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                    </g>
+                    <g id="Top-R" transform="translate(33.251807, 12.180149) scale(-1, 1) translate(-33.251807, -12.180149) translate(22.898680, 0.000000)">
+                        <path d="M-7.10542736e-15,13.398164 L-7.10542736e-15,15.5905908 L20.7068655,2.19242683 L20.7068655,0 L-7.10542736e-15,13.398164 Z" id="Rectangle-1" fill="#3F3F3F" sketch:type="MSShapeGroup"></path>
+                        <path d="M-7.10542736e-15,17.7830177 L-7.10542736e-15,19.9754445 L20.7068655,6.5772805 L20.7068655,4.38485367 L-7.10542736e-15,17.7830177 Z" id="Rectangle-1-copy" fill="#3F3F3F" sketch:type="MSShapeGroup"></path>
+                        <path d="M-7.10542736e-15,22.1678713 L-7.10542736e-15,24.3602982 L20.7068655,10.9621342 L20.7068655,8.76970734 L-7.10542736e-15,22.1678713 Z" id="Rectangle-1-copy-2" fill="#3F3F3F" sketch:type="MSShapeGroup"></path>
+                    </g>
+                    <g id="Bottom-R" transform="translate(33.251807, 25.578313) scale(-1, -1) translate(-33.251807, -25.578313) translate(22.898680, 13.398164)">
+                        <path d="M-7.10542736e-15,13.398164 L-7.10542736e-15,15.5905908 L20.7068655,2.19242683 L20.7068655,0 L-7.10542736e-15,13.398164 Z" id="Rectangle-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                        <path d="M-7.10542736e-15,17.7830177 L-7.10542736e-15,19.9754445 L20.7068655,6.5772805 L20.7068655,4.38485367 L-7.10542736e-15,17.7830177 Z" id="Rectangle-1-copy" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                        <path d="M-7.10542736e-15,22.1678713 L-7.10542736e-15,24.3602982 L20.7068655,10.9621342 L20.7068655,8.76970734 L-7.10542736e-15,22.1678713 Z" id="Rectangle-1-copy-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

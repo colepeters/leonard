@@ -1,9 +1,11 @@
 <header class="masthead" role="banner" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-<div>
-
-{{#if @blog.logo}}<a class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-<h1 class="blog-title">{{@blog.title}}</h1>
-<h2 class="blog-description">{{@blog.description}}</h2>
-
+<div class="o-container u-py4">
+  <div class="o-row">
+    <div class="o-col">
+      {{#if @blog.logo}}<a class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+      <h1 class="blog-title">{{@blog.title}}</h1>
+      <h2 class="blog-description">{{@blog.description}}</h2>
+    </div>
+  </div>
 </div>
 </header>

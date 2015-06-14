@@ -1,0 +1,53 @@
+body {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--blue-700);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (--screen-md) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+@media (--screen-lg) {
+  body {
+    line-height: 1.75;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", Roboto, Helvetica, sans-serif;
+  text-rendering: optimizelegibility;
+  line-height: 1.2;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+h1 {
+  letter-spacing: -2px;
+}
+
+h2 {
+  letter-spacing: -1px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}

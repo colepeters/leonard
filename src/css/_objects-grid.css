@@ -1,0 +1,32 @@
+.o-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (--screen-md) {
+  .o-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 42rem;
+  }
+}
+
+@media (--screen-lg) {
+  .o-container {
+    max-width: 45rem;
+  }
+}
+
+/* Using ungrid pattern by Chris Nager
+ * https://github.com/chrisnager/ungrid */
+.o-row {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.o-col {
+  display: table-cell;  
+}
