@@ -92,3 +92,39 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+/* Another legacy class which should be namespaced */
+.quoteAttribution,
+.c-quoteAttribution {
+  display: block;
+  margin-top: 1rem;
+  font-family: Georgia, serif;
+  font-size: 66%;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quoteAttribution:before,
+.c-quoteAttribution:before {
+  content: "—";
+}
+
+.quoteAttribution a,
+.c-quoteAttribution a {
+  background-position: 0 96%;
+}
+
+/* And another */
+.caption,
+.c-caption {
+  display: block;
+  font-size: 80%;
+  line-height: 1.4;
+  color: #75879e;
+}
+
+.caption:before,
+.c-caption:before {
+  content: "❯ ";
+  font-style: normal;
+}

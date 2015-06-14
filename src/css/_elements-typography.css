@@ -49,6 +49,10 @@ blockquote p {
   }
 }
 
+blockquote a {
+  color: var(--blue-600);
+}
+
 em {
   letter-spacing: -0.5px;
 }
