@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var cssnext = require('gulp-cssnext');
 var browserSync = require('browser-sync').create();
+var minifyCss = require('gulp-minify-css');
 var reload = browserSync.reload;
 var rename = require('gulp-rename');
 
@@ -9,6 +10,7 @@ gulp.task('css', function(){
     .pipe(cssnext({
       compress: false
     }))
+    .pipe(minifyCss())
     .pipe(rename({
       suffix: '.min'
     }))
@@ -22,6 +24,12 @@ gulp.task('sync', function(){
   });
   gulp.watch('./src/css/*.css', ['css']);
   gulp.watch('./*.hbs').on('change', browserSync.reload);
+});
+
+gulp.task('build', ['css'], function(){
+  gulp.src(['./**/*.hbs', '!./node_modules/**/*.hbs', 'assets/**/*'], {
+    base: './'
+  }).pipe(gulp.dest('./release'));
 });
 
 gulp.task('default', ['css', 'sync']);
