@@ -45,6 +45,10 @@
   background-color: #fafbfc;
 }
 
+.c-post-excerpt:first-child {
+  padding-top: 0;
+}
+
 .c-post-datetime {
   font-family: "Source Sans Pro", Roboto, Helvetica, sans-serif;  
   font-size: 66%;
@@ -74,4 +78,12 @@
 .c-title--excerpt a:hover,
 .c-title--excerpt a:focus {
   color: var(--blue-500);
+}
+
+/* Legacy class which should be namespaced, but isn't (in older articles) */
+.smallCaps,
+.u-smallCaps {
+  font-size: 80%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }

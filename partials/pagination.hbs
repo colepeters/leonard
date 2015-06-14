@@ -1,0 +1,15 @@
+<div class="o-row c-pagination">
+  <div class="o-col u-left">
+    {{#if next}}
+      <small><a href="{{page_url next}}">Older posts</a></small>
+    {{/if}}
+  </div>
+  <div class="o-col u-center">
+    <p><small>Page {{page}} of {{pages}}</small></p>
+  </div>
+  <div class="o-col u-right">
+    {{#if prev}}
+      <small><a href="{{page_url prev}}">Newer posts</a></small>
+    {{/if}}
+  </div>
+</div>

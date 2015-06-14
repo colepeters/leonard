@@ -114,7 +114,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--blue-700);
+  color: var(--blue-500);
   background-image: linear-gradient(transparent 50%, var(--blue-500) 50%);
 }
 

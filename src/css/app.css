@@ -5,6 +5,7 @@
 @import "_objects-grid.css";
 @import "_components-header.css";
 @import "_components-post.css";
+@import "_components-pagination.css";
 @import "_utilities.css";
 
 html {
