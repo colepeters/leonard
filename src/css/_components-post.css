@@ -7,7 +7,7 @@
   padding-top: 10vh;
   padding-bottom: 10vh;
   text-align: center;
-  color: var(--blue-500);
+  color: var(--blue-600);
 }
 
 @media (--screen-md) {
@@ -19,6 +19,10 @@
     padding-top: 10vh;
     padding-bottom: 0;
     text-align: left;
+  }
+
+  .c-post h2 {
+    font-size: 1.666em;
   }
 }
 
@@ -64,5 +68,10 @@
 .c-title--excerpt a {
   font-size: 150%;
   font-weight: 200;
+  color: var(--blue-600);
+}
+
+.c-title--excerpt a:hover,
+.c-title--excerpt a:focus {
   color: var(--blue-500);
 }
