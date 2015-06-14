@@ -3,14 +3,16 @@
 
 <section class="o-container" role="main">
 {{#foreach posts}}
-<article role="article" itemscope itemtype="http://schema.org/Article">
+<article role="article" itemscope itemtype="http://schema.org/Article" class="c-post-excerpt u-py3">
 
-<header class="postheader">
-<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='DD.MM.YYYY'}}</time>
-<h1 itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+<header class="u-center">
+<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished" class="c-post-datetime">{{date format='DD MMMM, YYYY'}}</time>
+<h1 itemprop="headline" class="c-title--excerpt u-mb3"><a href="{{{url}}}" rel="bookmark" class="u-bg-none">{{title}}</a></h1>
 </header>
 
-{{content}}
+<p>
+  {{excerpt}}&hellip; <a href="{{url}}" class="c-post-readmore">Read more</a>
+</p>
 {{#if tags}}
 <div class="tags">Tags: {{tags separator=" | "}}</div>
 {{/if}}
