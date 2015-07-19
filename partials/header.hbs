@@ -1,7 +1,7 @@
 <header class="u-center" role="banner" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
 <div class="o-container u-py-dynamic">
   <div class="o-row">
-    <div class="o-col">
+    <div class="o-col" style="line-height: 1;">
       {{#if @blog.logo}}<a class="u-bg-none" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
       <h1 class="c-header-title">{{@blog.title}}</h1>
       <h2 class="c-header-description">{{@blog.description}}</h2>
