@@ -59,9 +59,15 @@ em {
 
 pre,
 code {
-  font-family: "Source Code Pro", "Inconsolata XL", "Consolas", "Roboto Code", "Andale Mono", fixed-width;
-  font-size: 80%;
+  font-family: "Source Code Pro", "Roboto Mono", "Inconsolata XL", "Consolas", "Andale Mono", fixed-width;
+  font-size: 1rem;
   color: var(--maroon-500);
+}
+
+pre {
+  padding: 1em;
+  border-radiues: 3px;
+  background-color: #f0f1f2;
 }
 
 /* ========================================================
