@@ -1,6 +1,6 @@
 .c-header-title {
   font-size: 140%;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--blue-700);
@@ -9,7 +9,6 @@
 @media (--screen-md) {
   .c-header-title {
     font-size: 160%;
-    font-weight: 300;
     letter-spacing: 3px;
   }
 }
