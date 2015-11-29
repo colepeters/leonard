@@ -55,7 +55,7 @@
 }
 
 .c-post-datetime {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;  
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;  
   font-size: 66%;
   text-transform: uppercase;
   letter-spacing: 2px;
