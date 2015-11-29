@@ -34,7 +34,7 @@ blockquote {
 
 blockquote p {
   margin-left: 0.5rem;
-  font-family: "Source Sans Pro", Roboto, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;  
   font-weight: 300;
   font-size: 120%;
   line-height: 1.4;
@@ -79,24 +79,22 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Source Sans Pro", Roboto, Helvetica, sans-serif;
-  text-rendering: optimizelegibility;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+  text-rendering: optimizeLegibility;
   line-height: 1.2;
 }
 
 h1,
 h2 {
   font-weight: 300;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: auto;
 }
 
 h1 {
-  letter-spacing: -2px;
+  letter-spacing: -0.04em;
 }
 
 h2 {
-  letter-spacing: -1px;
+  letter-spacing: -0.02em;
 }
 
 h3,
@@ -133,6 +131,17 @@ a:focus {
 
 a:active {
   color: var(--blue-700);
+}
+
+::selection {
+  text-shadow: none;
+  background-color: var(--grey-300);
+}
+
+
+::-moz-selection {
+  text-shadow: none;
+  background-color: var(--grey-300);
 }
 
 /* IE9 doesn’t do gradients; revert to underlines for it */
