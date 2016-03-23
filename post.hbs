@@ -1,22 +1,16 @@
 {{!< default}}
-<div class="o-container u-py-dynamic u-center">
-  <div class="o-row">
-    <div class="o-col" style="line-height: 0;">
-      {{#if @blog.logo}}<a class="u-bg-none" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-    </div>
-  </div>
-</div>
+{{> header}}
 
-<div class="o-container">
-  <section class="o-row" role="main">
+<div class='o-container'>
+  <section class='o-row' role='main'>
     {{#post}}
-    <article class="o-col c-post" role="article" itemscope itemtype="http://schema.org/Article">
+    <article class='o-col c-post' role='article' itemscope itemtype='http://schema.org/Article'>
       
-      <header class="u-center">
-        <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished" class="c-post-datetime">{{date format='DD MMMM, YYYY'}}</time>
-        <h1 class="c-title u-mt4 u-mb4" itemprop="headline">{{title}}</h1>
-        <div class="c-post-image">
-          <img src="{{image}}">
+      <header class='tac'>
+        <time datetime='{{date format='YYYY-MM-DD'}}' itemprop='datePublished' class='c-post-datetime upper gray700'>{{date format='DD MMMM, YYYY'}}</time>
+        <h1 class='c-title mt4 mb4' itemprop='headline'>{{title}}</h1>
+        <div class='c-post-image'>
+          <img src='{{image}}'>
         </div>
       </header>
       

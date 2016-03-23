@@ -1,21 +1,26 @@
 {{!< default}}
 {{> header}}
 
-<section class="o-container" role="main">
-{{#foreach posts}}
-<article role="article" itemscope itemtype="http://schema.org/Article" class="c-post-excerpt u-py3">
+<section class='o-container' role='main'>
+  {{#foreach posts}}
+    <article role='article' itemscope itemtype='http://schema.org/Article' class='c-post-excerpt relative pt4 pb4'>
 
-<header class="u-center">
-<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished" class="c-post-datetime">{{date format='DD MMMM, YYYY'}}</time>
-<h1 itemprop="headline" class="c-title--excerpt u-mb3"><a href="{{{url}}}" rel="bookmark" class="u-bg-none">{{title}}</a></h1>
-</header>
+      <header class='tac'>
+        <time datetime='{{date format='YYYY-MM-DD'}}' itemprop='datePublished' class='c-post-datetime upper gray700'>{{date format='DD MMMM, YYYY'}}</time>
+        <h1 itemprop='headline' class='c-title--excerpt mb3 blue700 h2'>
+          <a href='{{{url}}}' rel='bookmark' class='linkReset'>
+            {{title}}
+          </a>
+        </h1>
+      </header>
 
-<p>
-  {{excerpt}}&hellip; <a href="{{url}}" class="c-post-readmore">Read more</a>
-</p>
-</article>
-{{/foreach}}
-{{#if pagination}}{{{pagination}}}{{/if}}
+      <p class='serif'>
+        {{excerpt}}&hellip; <a href='{{url}}' class='c-post-readmore smallCaps sans'>read more</a>
+      </p>
+    </article>
+  {{/foreach}}
+
+  {{#if pagination}}{{{pagination}}}{{/if}}
 
 </section>
 

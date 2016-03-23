@@ -1,17 +1,16 @@
 @import "../../node_modules/normalize.css/normalize.css";
-@import "_settings-media.css";
-@import "_settings-colour.css";
+@import "../../node_modules/gemma/src/gemma.css";
 @import "_elements-typography.css";
 @import "_objects-grid.css";
 @import "_components-header.css";
 @import "_components-post.css";
 @import "_components-pagination.css";
-@import "_utilities.css";
-
-html {
-  font-size: 100%;
-}
 
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.blog-bg {
   background-color: #fafbfc;
 }

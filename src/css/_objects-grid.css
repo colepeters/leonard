@@ -5,7 +5,7 @@
   padding-right: 0.5rem;
 }
 
-@media (--screen-md) {
+@media (--SCREEN_MD) {
   .o-container {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -13,7 +13,7 @@
   }
 }
 
-@media (--screen-lg) {
+@media (--SCREEN_LG) {
   .o-container {
     max-width: 52rem;
   }

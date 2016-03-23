@@ -1,10 +1,9 @@
-<header class="u-center" role="banner" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-<div class="o-container u-py-dynamic">
-  <div class="o-row">
-    <div class="o-col" style="line-height: 1;">
-      {{#if @blog.logo}}<a class="u-bg-none" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-      <h1 class="c-header-title">{{@blog.title}}</h1>
-      <h2 class="c-header-description">{{@blog.description}}</h2>
+<header class='tac' role='banner' {{#if @blog.cover}}style='background-image: url({{@blog.cover}})'{{/if}}>
+<div class='o-container pt3 pb3 _md-pt4 _md-pb4'>
+  <div class='o-row'>
+    <div class='o-col' style='line-height: 1;'>
+      {{#if @blog.logo}}<a class='linkReset' href='{{@blog.url}}'><img src='{{@blog.logo}}' alt='Blog Logo' class='mb2' /></a>{{/if}}
+      <h1 class='c-header-title upper fw300 coolGray900 sans'>{{@blog.title}}</h1>
     </div>
   </div>
 </div>

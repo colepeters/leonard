@@ -1,22 +1,11 @@
 .c-header-title {
   font-size: 140%;
-  font-weight: 300;
-  text-transform: uppercase;
   letter-spacing: 0.02em;
-  color: var(--blue-700);
 }
 
-@media (--screen-md) {
+@media (--SCREEN_MD) {
   .c-header-title {
     letter-spacing: 0.04em;
   }
 }
 
-.c-header-description {
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-size: 80%;
-  font-weight: 400;
-  letter-spacing: normal;
-  -webkit-font-smoothing: antialiased;
-}

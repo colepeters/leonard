@@ -1,6 +1,6 @@
 {
   "name": "Leonard",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "description": "A theme for my blog (https://blog.colepeters.com)",
   "repository": {
     "type": "git",
@@ -9,10 +9,15 @@
   "license": "CC-BY-NC-SA-4.0",
   "devDependencies": {
     "browser-sync": "2.7.6",
+    "cssnano": "~3.5.2",
+    "gemma": "file:../../../../gemma",
     "gulp": "3.9.0",
-    "gulp-cssnext": "1.0.0",
-    "gulp-minify-css": "^1.1.6",
+    "gulp-postcss": "~6.0.1",
     "gulp-rename": "^1.2.2",
-    "normalize.css": "^3.0.3"
+    "normalize.css": "^3.0.3",
+    "postcss-cssnext": "~2.4.0",
+    "postcss-import": "~8.0.2",
+    "postcss-reporter": "~0.4.0",
+    "postcss-url": "~5.1.1"
   }
 }

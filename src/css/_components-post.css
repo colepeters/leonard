@@ -7,10 +7,10 @@
   padding-top: 1.2em;
   padding-bottom: 1.2em;
   text-align: center;
-  color: var(--blue-600);
+  color: var(--COLOR_BLUE_700);
 }
 
-@media (--screen-md) {
+@media (--SCREEN_MD) {
   .c-post h2,
   .c-post h3,
   .c-post h4,
@@ -32,21 +32,20 @@
 }
 
 .c-post-excerpt {
-  position: relative;
-  border-bottom: 1px solid var(--grey-300);
+  border-bottom: 1px solid var(--COLOR_GRAY_300);
 }
 
 .c-post-excerpt:after {
   content: "";
   display: block;
   position: relative;
-  top: 3.38rem;
+  top: 3.5em;
   left: 50%;
   margin-left: -4px;
   height: 8px;
   width: 8px;
   border-radius: 5px;
-  border: 1px solid var(--grey-300);
+  border: 1px solid var(--COLOR_GRAY_300);
   background-color: #fafbfc;
 }
 
@@ -55,39 +54,23 @@
 }
 
 .c-post-datetime {
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;  
   font-size: 66%;
-  text-transform: uppercase;
   letter-spacing: 2px;
-  color: #99a;
-}
-
-.c-post-readmore {
-  font-size: 66%;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .c-title {
   font-size: 250%;
-  font-weight: 500;
-  color: var(--blue-600);
-}
-
-.c-title--excerpt a {
-  font-weight: 400;
-  color: var(--blue-600);
+  color: var(--COLOR_BLUE_700);
 }
 
 .c-title--excerpt a:hover,
 .c-title--excerpt a:focus {
-  color: var(--blue-500);
+  color: var(--COLOR_BLUE_500);
 }
 
 /* Legacy class which should be namespaced, but isn't (in older articles) */
-.smallCaps,
 .u-smallCaps {
-  font-size: 80%;
+  font-size: 75%;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -97,8 +80,7 @@
 .c-quoteAttribution {
   display: block;
   margin-top: 1rem;
-  font-family: Georgia, serif;
-  font-size: 66%;
+  font-size: 75%;
   font-weight: 400;
   font-style: italic;
 }

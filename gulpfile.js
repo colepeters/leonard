@@ -1,21 +1,31 @@
 var gulp = require('gulp')
-var cssnext = require('gulp-cssnext')
 var browserSync = require('browser-sync').create()
-var minifyCss = require('gulp-minify-css')
-var reload = browserSync.reload
+var postcss = require('gulp-postcss')
 var rename = require('gulp-rename')
 
+var BROWSER_SUPPORT_LIST = [
+  'Chrome >= 41',
+  'Safari >= 8',
+  'Firefox >= 36',
+  'ie >= 10',
+  'iOS >= 8',
+  'Android >= 4.4.2',
+  'ChromeAndroid >= 4.4.2'
+]
+
 gulp.task('css', function () {
-  gulp.src('src/css/app.css')
-    .pipe(cssnext({
-      compress: false
-    }))
-    .pipe(minifyCss())
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('./assets/css'))
-    .pipe(reload({stream: true}))
+  return gulp.src('src/css/app.css')
+  .pipe(postcss([
+    require('postcss-import'),
+    require('postcss-cssnext')({
+      browsers: BROWSER_SUPPORT_LIST
+    }),
+    require('cssnano')
+  ]))
+  .pipe(rename({
+    suffix: '.min'
+  }))
+  .pipe(gulp.dest('./assets/css'))
 })
 
 gulp.task('sync', function () {

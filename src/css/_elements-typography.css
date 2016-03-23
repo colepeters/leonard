@@ -1,56 +1,29 @@
-body {
-  font-family: 'PT Serif', Georgia, serif;
-  font-size: 105%;
-  line-height: 1.666;
-  color: var(--grey-900);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@media (--screen-md) {
-  body {
-    font-size: 120%;
-  }
-}
-
-@media (--screen-lg) {
-  body {
-    font-size: 133%;
-    line-height: 1.7;
-  }
-}
-
 hr {
   border: none;
-  border-top: 1px solid var(--grey-300);
+  border-top: 1px solid var(--COLOR_GRAY_300);
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
 blockquote {
-  border-left: 4px solid var(--grey-300);
-  margin: 0;
+  border-left: 2px solid var(--COLOR_AQUA_300);
+  margin: 2em 0;
 }
 
 blockquote p {
   margin-left: 0.5em;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;  
-  font-weight: 300;
-  color: var(--blue-600);
-  letter-spacing: -0.02em;
+  color: var(--COLOR_COOLGRAY_900);
 }
 
-@media (--screen-md) {
+@media (--SCREEN_MD) {
   blockquote p {
     margin-left: 1em;
-    font-size: 1.125em;
-    line-height: 1.75;
     letter-spacing: -0.03em;
   }
 }
 
 blockquote a {
-  color: var(--blue-600);
+  color: var(--COLOR_BLUE_700);
 }
 
 em {
@@ -59,9 +32,7 @@ em {
 
 pre,
 code {
-  font-family: "Fira Mono", "Source Code Pro", "Roboto Mono", "Inconsolata XL", "Consolas", "Andale Mono", fixed-width;
-  font-size: 0.9em;
-  color: var(--maroon-500);
+  color: var(--COLOR_MAGENTA_700);
 }
 
 pre {
@@ -70,82 +41,14 @@ pre {
   background-color: #f0f1f2;
 }
 
-/* ========================================================
- * HEADINGS
- * ======================================================*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;  
-  text-rendering: optimizeLegibility;
-  line-height: 1.2;
-}
-
-h1,
-h2 {
-  font-weight: 500;
-}
-
-h1 {
-  letter-spacing: -0.04em;
-}
-
-h2 {
-  letter-spacing: -0.02em;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
-}
-
-
-/* ========================================================
- * LINKS
- * ======================================================*/
-
-/* Use background-image gradient for link underlines
- * http://codepen.io/jxnblk/pen/jCmwK */
-a,
-a:link,
-a:visited {
-  text-decoration: none;
-  color: currentColor;
-  background-image: linear-gradient(transparent 50%, var(--grey-500) 50%);
-  background-repeat: repeat-x;
-  background-size: 2px 2px;
-  background-position: 0 90%;
-  transition: color 0.2s ease-out;
-  text-shadow: 0.03em 0 0 #fafbfc, 0.06em 0 0 #fafbfc, 0.09em 0 0 #fafbfc, 0.12em 0 0 #fafbfc, 0.15em 0 0 #fafbfc, -0.03em 0 0 #fafbfc, -0.06em 0 0 #fafbfc, -0.09em 0 0 #fafbfc, -0.12em 0 0 #fafbfc, -0.15em 0 0 #fafbfc;
-}
-
-a:hover,
-a:focus {
-  color: var(--blue-500);
-}
-
-a:active {
-  color: var(--blue-700);
-}
-
 ::selection {
   text-shadow: none;
-  background-color: var(--grey-300);
+  background-color: var(--COLOR_GRAY_300);
 }
 
 
 ::-moz-selection {
   text-shadow: none;
-  background-color: var(--grey-300);
+  background-color: var(--COLOR_GRAY_300);
 }
 
-/* IE9 doesn’t do gradients; revert to underlines for it */
-.ie9 a {
-  background-image: transparent;
-  text-decoration: underline;
-}
