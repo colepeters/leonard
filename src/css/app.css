@@ -7,8 +7,21 @@
 @import "_components-pagination.css";
 
 body {
+  font-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (--SCREEN_MD) {
+  body {
+    font-size: 112.5%;
+  }
+}
+
+@media (--SCREEN_LG) {
+  body {
+    font-size: 125%;
+  }
 }
 
 .blog-bg {
