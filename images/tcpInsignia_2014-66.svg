@@ -12,7 +12,7 @@
                 <use xlink:href="#path-1"></use>
             </mask>
             <use id="Oval-1" fill="#D8D8D8" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
-            <rect id="Background" fill="#E65050" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="2" y="2" width="62.3623633" height="62.3623633"></rect>
+            <rect id="Background" fill="#929ba1" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="2" y="2" width="62.3623633" height="62.3623633"></rect>
             <g id="Insignia" sketch:type="MSLayerGroup" mask="url(#mask-2)">
                 <g transform="translate(11.378715, 14.301951)">
                     <g id="Bottom-L" transform="translate(10.353127, 25.578313) scale(1, -1) translate(-10.353127, -25.578313) translate(0.000000, 13.398164)">
