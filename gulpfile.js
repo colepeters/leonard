@@ -39,7 +39,7 @@ gulp.task('sync', function () {
 gulp.task('build', ['css'], function () {
   gulp.src(['./**/*.hbs', '!./node_modules/**/*.hbs', 'assets/**/*', 'package.json'], {
     base: './'
-  }).pipe(gulp.dest('./release'))
+  }).pipe(gulp.dest('release'))
 })
 
 gulp.task('default', ['css', 'sync'])
