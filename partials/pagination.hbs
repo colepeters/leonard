@@ -1,19 +1,14 @@
-<div class='o-row c-pagination mt4 smallcaps'>
-  <div class='o-col tal'>
-    {{#if next}}
-      <small>
-        <a href='{{page_url next}}'>Older posts</a>
-      </small>
-    {{/if}}
-  </div>
-  <div class='o-col tac'>
-    <p><small>Page {{page}} of {{pages}}</small></p>
-  </div>
-  <div class='o-col tar'>
+<div class='mt5 ttu tracked sans-serif f6 mid-gray'>
+  <p>Page {{page}} of {{pages}}</p>
+  {{#if next}}
+    <a href='{{page_url next}}' class='dark-green dim'>Older posts</a>
+  {{/if}}
+  {{#if next}}
     {{#if prev}}
-      <small>
-        <a href='{{page_url prev}}'>Newer posts</a>
-      </small>
+      /
     {{/if}}
-  </div>
+  {{/if}}
+  {{#if prev}}
+    <a href='{{page_url prev}}' class='dark-green dim'>Newer posts</a>
+  {{/if}}
 </div>

@@ -1,29 +1,60 @@
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  font-weight: 400;
+}
+
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+}
+
+@media screen and (min-width: 60em) {
+  article h2,
+  article h3,
+  article h4,
+  article h5,
+  article h6 {
+    padding-top: 2em;
+    padding-bottom: 0;
+    margin: 0;
+  }
+}
+
 hr {
   border: none;
-  border-top: 1px solid var(--COLOR_GRAY_300);
+  border-top: 1px solid #aaa;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
 blockquote {
-  border-left: 2px solid var(--COLOR_AQUA_300);
+  border-left: 1px dotted #aaa;
   margin: 2em 0;
 }
 
 blockquote p {
   margin-left: 0.5em;
-  color: var(--COLOR_COOLGRAY_900);
+  color: #555;
+  font-style: italic;
 }
 
-@media (--SCREEN_MD) {
+@media screen and (min-width: 60em) {
   blockquote p {
-    margin-left: 1em;
-    letter-spacing: -0.03em;
+    margin-left: 2em;
   }
 }
 
 blockquote a {
-  color: var(--COLOR_BLUE_700);
+  color: #006C71;
 }
 
 em {
@@ -32,23 +63,24 @@ em {
 
 pre,
 code {
-  color: var(--COLOR_MAGENTA_700);
+  color: #006C71;
+  font-family: 'SF Mono', 'Roboto Mono', Menlo, monospace;
+  font-size: 0.875rem;
 }
 
 pre {
   padding: 1em;
   border-radius: 3px;
-  background-color: #f0f1f2;
+  background-color: #f4f4f4;
+  overflow: scroll;
 }
 
 ::selection {
-  text-shadow: none;
-  background-color: var(--COLOR_GRAY_300);
+  background-color: #41D69F;
 }
 
 
 ::-moz-selection {
-  text-shadow: none;
-  background-color: var(--COLOR_GRAY_300);
+  background-color: #41D69F;
 }
 

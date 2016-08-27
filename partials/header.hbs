@@ -1,10 +1,9 @@
-<header class='tac' role='banner' {{#if @blog.cover}}style='background-image: url({{@blog.cover}})'{{/if}}>
-<div class='o-container pt3 pb3 _md-pt4 _md-pb4'>
-  <div class='o-row'>
-    <div class='o-col' style='line-height: 1;'>
-      {{#if @blog.logo}}<a class='linkReset' href='{{@blog.url}}'><img src='{{@blog.logo}}' alt='Blog Logo' class='mb2' /></a>{{/if}}
-      <h1 class='c-header-title upper fw300 coolGray900 sans'>{{@blog.title}}</h1>
-    </div>
-  </div>
+<header role='banner' {{#if @blog.cover}}style='background-image: url({{@blog.cover}})'{{/if}}>
+<div class='pt4 pb4 pt6-ns pb6-ns'>
+  <h1 class='ttu tracked sans-serif fw3 f3'>
+    <a href='{{@blog.url}}' class='link mid-gray dim'>
+      {{@blog.title}}
+    </a>
+  </h1>
 </div>
 </header>

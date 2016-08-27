@@ -1,32 +1,19 @@
-@import "../../node_modules/gemma/src/gemma.css";
+@import "../../node_modules/tachyons/css/tachyons.min.css";
 @import "_elements-typography.css";
-@import "_objects-grid.css";
-@import "_components-header.css";
 @import "_components-post.css";
 @import "_components-pagination.css";
 
 body {
-  font-size: 100%;
+  font-size: 1.125em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (--SCREEN_MD) {
-  body {
-    font-size: 112.5%;
-  }
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-@media (--SCREEN_LG) {
-  body {
-    font-size: 125%;
-  }
-}
-
-.blog-bg {
-  background-color: #fafbfc;
-}
-
-h1 {
-  letter-spacing: -0.04em;
+.cp-serif {
+  font-family: Charter, Garamond, Georgia, serif;
 }

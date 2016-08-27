@@ -1,94 +1,36 @@
-.c-post h2,
-.c-post h3,
-.c-post h4,
-.c-post h5,
-.c-post h6 {
-  margin: 0;
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
-  text-align: center;
-  color: var(--COLOR_MAGENTA_500);
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Avenir, 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 600;
+article a {
+  color: #006C71;
 }
 
-@media (--SCREEN_MD) {
-  .c-post h2,
-  .c-post h3,
-  .c-post h4,
-  .c-post h5,
-  .c-post h6 {
-    padding-top: 1.2em;
-    padding-bottom: 0;
-    text-align: left;
-  }
-
-  .c-post h2 {
-    font-size: 1.666em;
-  }
+article a:hover,
+article a:focus {
+  opacity: 0.5;
+  transition: opacity .15s ease-in;
 }
 
-.c-post img {
-  max-width: 100%;
-  height: auto;
+article a:active {
+  opacity: .8;
+  transition: opacity .15s ease-out;
 }
 
-.c-post-excerpt {
-  border-bottom: 1px solid var(--COLOR_GRAY_300);
+.excerpt p {
+  margin-bottom: 0;
 }
 
-.c-post-excerpt:after {
-  content: "";
-  display: block;
-  position: relative;
-  top: 4.35em;
-  left: 50%;
-  margin-left: -4px;
-  height: 8px;
-  width: 8px;
-  border-radius: 5px;
-  border: 1px solid var(--COLOR_GRAY_300);
-  background-color: #fafbfc;
-}
-
-@media (--SCREEN_MD) {
-  .c-post-excerpt:after {
-    top: 3.85em;
-  }
-}
-
-@media (--SCREEN_LG) {
-  .c-post-excerpt:after {
-    top: 3.5em;
-  }
-}
-
-.c-post-excerpt:first-child {
+.excerpt:first-child {
   padding-top: 0;
 }
 
-.c-post-datetime {
-  font-size: 66%;
-  letter-spacing: 2px;
-}
+/*
+ * LEGACY CLASSES WHICH NEED TO BE MAINTAINED FOR OLDER ARTICLES
+ */
 
-.c-title {
-  font-size: 250%;
-}
-
-.c-title--excerpt a:hover,
-.c-title--excerpt a:focus {
-  color: var(--COLOR_COOLGRAY_700);
-}
-
-/* Legacy class which should be namespaced, but isn't (in older articles) */
 .u-smallCaps {
-  font-size: 75%;
+  font-size: 80%;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-/* Another legacy class which should be namespaced */
 .quoteAttribution,
 .c-quoteAttribution {
   display: block;
@@ -103,22 +45,12 @@
   content: "—";
 }
 
-.quoteAttribution a,
-.c-quoteAttribution a {
-  background-position: 0 96%;
-}
-
-/* And another */
 .caption,
 .c-caption {
+  margin-top: 0;
   display: block;
   font-size: 80%;
+  font-style: italic;
   line-height: 1.4;
-  color: #75879e;
-}
-
-.caption:before,
-.c-caption:before {
-  content: "❯ ";
-  font-style: normal;
+  color: #555;
 }

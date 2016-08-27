@@ -1,14 +1,13 @@
 {{!< default}}
 {{> header}}
 
-<div class='o-container'>
-  <section class='o-row' role='main'>
-    {{#post}}
-    <article class='o-col c-post' role='article' itemscope itemtype='http://schema.org/Article'>
+<main class='mw7-ns lh-copy'>
+  {{#post}}
+    <article class='dark-gray' role='article' itemscope itemtype='http://schema.org/Article'>
       
-      <header class='tac'>
-        <time datetime='{{date format='YYYY-MM-DD'}}' itemprop='datePublished' class='c-post-datetime upper gray700'>{{date format='DD MMMM, YYYY'}}</time>
-        <h1 class='c-title mt4 mb4 sans fw600 magenta500' itemprop='headline'>{{title}}</h1>
+      <header>
+        <time datetime='{{date format='YYYY-MM-DD'}}' itemprop='datePublished' class='mb0 ttu tracked f6 black-50 sans-serif'>{{date format='DD MMMM, YYYY'}}</time>
+        <h1 class='mt2 mb6 f1 fw4 sans-serif lh-title' itemprop='headline'>{{title}}</h1>
         <div class='c-post-image'>
           <img src='{{image}}'>
         </div>
@@ -16,9 +15,8 @@
       
       {{content}}
     </article>
-    {{/post}}
-    {{#if pagination}}{{{pagination}}}{{/if}}
-  </section>
-</div>
+  {{/post}}
+  {{#if pagination}}{{{pagination}}}{{/if}}
+</main>
 
 {{> footer}}

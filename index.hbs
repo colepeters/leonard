@@ -1,27 +1,27 @@
 {{!< default}}
 {{> header}}
 
-<section class='o-container' role='main'>
+<main class='mw7-ns lh-copy' role='main'>
   {{#foreach posts}}
-    <article role='article' itemscope itemtype='http://schema.org/Article' class='c-post-excerpt relative pt4 pb4'>
+    <article role='article' itemscope itemtype='http://schema.org/Article' class='pt5 pb5 bb b--light-gray excerpt'>
 
-      <header class='tac'>
-        <time datetime='{{date format='YYYY-MM-DD'}}' itemprop='datePublished' class='c-post-datetime upper gray700'>{{date format='DD MMMM, YYYY'}}</time>
-        <h1 itemprop='headline' class='c-title--excerpt mb3 magenta500 h2 fw600 sans'>
-          <a href='{{{url}}}' rel='bookmark' class='linkReset'>
+      <header>
+        <time datetime='{{date format='YYYY-MM-DD'}}' itemprop='datePublished' class='ttu tracked f6 mid-gray sans-serif'>{{date format='DD MMMM, YYYY'}}</time>
+        <h1 itemprop='headline' class='mb3 f1 fw4 sans-serif lh-title'>
+          <a href='{{{url}}}' rel='bookmark' class='link dark-green dim'>
             {{title}}
           </a>
         </h1>
       </header>
 
       <p>
-        {{excerpt}}&hellip; <a href='{{url}}' class='c-post-readmore smallCaps sans'>read more</a>
+        {{excerpt}}&hellip; <a href='{{url}}' class='sans-serif ttu tracked f6 dark-green dim'>read more</a>
       </p>
     </article>
   {{/foreach}}
 
   {{#if pagination}}{{{pagination}}}{{/if}}
 
-</section>
+</main>
 
 {{> footer}}
